@@ -1,0 +1,71 @@
+{
+	"Styles Function TypeScript": {
+		"scope": "javascript,typescript",
+		"prefix": "gbtstyles",
+		"body": [
+			"import { MapTypes } from '/utils/typeTools'",
+			"",
+			"const styles = (variables: AllVariablesType) => (MapTypes({",
+			"	common: {",
+			"		container: {",
+			"			flex: 1,",
+			"			backgroundColor: variables.${1:surface900Color},",
+			"		},",
+			"		constants: {},",
+			"	},",
+			"}))",
+			"",
+			"export default styles",
+			""
+
+		],
+		"description": "Log output to console"
+	},
+	"Functional Component": {
+		"scope": "javascript,typescript",
+		"prefix": "gbtrc",
+		"body": [
+			"import React from 'react'",
+			"import { View } from 'react-native'",
+			"import { useStylesContext } from 'hooks/styles'",
+			"import usePolyglot from 'hooks/polyglot'",
+			"import stylesheets from './styles'",
+			"",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = ({ navigation }) => {",
+			"	const [styles]: typeof stylesheets = useStylesContext(stylesheets)",
+			"	const t = usePolyglot('${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}')"
+			"",
+			"	return (",
+			"		<View style={styles.container}>",
+			"",
+			"		</View>",
+			"	)",
+			"}",
+			"",
+			"export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}",
+			""
+		],
+		"description": "Log output to console"
+	},
+	"Styles Function": {
+		"scope": "javascript,typescript",
+		"prefix": "gbstyles",
+		"body": [
+			"",
+			"const styles = (variables) => ({",
+			"	common: {",
+			"		container: {",
+			"			flex: 1,",
+			"			backgroundColor: variables.${1:surface900Color},",
+			"		},",
+			"		constants: {},",
+			"	},",
+			"})",
+			"",
+			"export default styles",
+			""
+
+		],
+		"description": "Log output to console"
+	}
+}
