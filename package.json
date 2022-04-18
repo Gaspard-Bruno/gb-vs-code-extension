@@ -3,6 +3,7 @@
 	"displayName": "Gaspard Bruno",
 	"description": "Snippets and tools",
 	"version": "0.0.1",
+	"publisher": "GaspardBruno",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
@@ -34,6 +35,10 @@
 			}
 		  ]
 	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Gaspard-Bruno/gb-vs-code-extension"
+	  },
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
 		"compile": "tsc -p ./",

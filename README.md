@@ -1,6 +1,5 @@
 # gaspard-bruno README
 
-This is the README for your extension "gaspard-bruno".
 
 <!-- PROJECT LOGO -->
 <br />
