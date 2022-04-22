@@ -32,7 +32,7 @@
 			"import stylesheets from './styles'",
 			"",
 			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = ({ navigation }) => {",
-			"	const [styles]: typeof stylesheets = useStylesContext(stylesheets)",
+			"	const [styles] = useStylesContext(stylesheets)",
 			"	const t = usePolyglot('${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}')"
 			"",
 			"	return (",
