@@ -17,7 +17,6 @@
 			"",
 			"export default styles",
 			""
-
 		],
 		"description": "Log output to console"
 	},
@@ -30,8 +29,14 @@
 			"import { useStylesContext } from 'hooks/styles'",
 			"import usePolyglot from 'hooks/polyglot'",
 			"import stylesheets from './styles'",
+			"import { StackScreenProps } from '@react-navigation/stack'"
+			""
+			"type RootStackParamList = {"
+			"   ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: undefined"
+			"}"
+			"type Props = StackScreenProps<RootStackParamList, '${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}'>"
 			"",
-			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = ({ navigation }) => {",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = ({ navigation }:Props) => {",
 			"	const [styles] = useStylesContext(stylesheets)",
 			"	const t = usePolyglot('${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}')"
 			"",
@@ -64,7 +69,6 @@
 			"",
 			"export default styles",
 			""
-
 		],
 		"description": "Log output to console"
 	}
