@@ -1,7 +1,7 @@
 {
 	"Styles Function TypeScript": {
-		"scope": "javascript,typescript",
-		"prefix": "gbtstyles",
+		"scope": "typescript",
+		"prefix": "gbstyles",
 		"body": [
 			"import { MapTypes } from '/utils/typeTools'",
 			"",
@@ -21,8 +21,8 @@
 		"description": "Log output to console"
 	},
 	"Functional Component": {
-		"scope": "javascript,typescript",
-		"prefix": "gbtrc",
+		"scope": "typescript",
+		"prefix": "gbrnc",
 		"body": [
 			"import React from 'react'",
 			"import { View } from 'react-native'",
@@ -53,7 +53,7 @@
 		"description": "Log output to console"
 	},
 	"Styles Function": {
-		"scope": "javascript,typescript",
+		"scope": "javascript",
 		"prefix": "gbstyles",
 		"body": [
 			"",
