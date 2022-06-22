@@ -11,7 +11,7 @@
 </p>
 
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui)](https://github.com/Gaspard-Bruno/gb-vs-code-extension/blob/main/LICENSE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Gaspard-Bruno/repository-name)](https://github.com/Gaspard-Bruno/gb-vs-code-extension/graphs/commit-activity)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Gaspard-Bruno/gb-vs-code-extension)](https://github.com/Gaspard-Bruno/gb-vs-code-extension/graphs/commit-activity)
 
 Library description
 
