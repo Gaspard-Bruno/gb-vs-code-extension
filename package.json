@@ -2,7 +2,7 @@
   "name": "gaspard-bruno",
   "displayName": "Gaspard Bruno",
   "description": "Snippets and tools",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "publisher": "GaspardBruno",
   "engines": {
     "vscode": "^1.52.0"
