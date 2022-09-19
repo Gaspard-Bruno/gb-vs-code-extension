@@ -22,7 +22,31 @@
 	},
 	"Functional Component": {
 		"scope": "typescript",
-		"prefix": "gbrnc",
+		"prefix": "gbcomp",
+		"body": [
+			"import React from 'react'",
+			"import { View } from 'react-native'",
+			"import { useStylesContext } from 'hooks/styles'",
+			"import stylesheets from './styles'",
+			"",
+			"const ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}} = () => {",
+			"	const [styles] = useStylesContext(stylesheets)",
+			"",
+			"	return (",
+			"		<View style={styles.container}>",
+			"",
+			"		</View>",
+			"	)",
+			"}",
+			"",
+			"export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}",
+			""
+		],
+		"description": "React native componente simples"
+	},
+	"Functional Screen": {
+		"scope": "typescript",
+		"prefix": "gbscreen",
 		"body": [
 			"import React from 'react'",
 			"import { View } from 'react-native'",
@@ -51,7 +75,7 @@
 			"export default ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}",
 			""
 		],
-		"description": "Log output to console"
+		"description": "React Native with navigation types"
 	},
 	"Styles Function": {
 		"scope": "javascript",
@@ -61,8 +85,8 @@
 			"const styles = (variables) => ({",
 			"	common: {",
 			"		container: {",
-			"			flex: 1,",
-			"			backgroundColor: variables.${1:surface900Color},",
+			"			flexGrow: 1,",
+			"			backgroundColor: variables.${1:white},",
 			"		},",
 			"		constants: {},",
 			"	},",
@@ -71,6 +95,6 @@
 			"export default styles",
 			""
 		],
-		"description": "Log output to console"
+		"description": "Styles template for javascript"
 	}
 }
