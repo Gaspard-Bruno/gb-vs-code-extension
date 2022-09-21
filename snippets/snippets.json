@@ -57,7 +57,7 @@
 			"import { NativeStackScreenProps as StackScreenProps } from '@react-navigation/native-stack'",
 			"",
 			"type RootStackParamList = {",
-			"   ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: undefined",
+			"   ${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}: any",
 			"}",
 			"type Props = StackScreenProps<RootStackParamList, '${1:${TM_DIRECTORY/^.*(\\/|\\\\)([^(\\/|\\\\)]+)$/$2/}}'>",
 			"",
